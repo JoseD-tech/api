@@ -10,7 +10,7 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
  
 # Stage 2
-FROM python:3-alpine AS runner
+FROM python:3-slim AS runner
  
 WORKDIR /app
  
